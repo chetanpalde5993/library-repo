@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    db1:
+      jdbc-url: jdbc:mysql://localhost:3306/book?createDatabaseIfNotExist=true
+      username: root
+      password: Chetan@12345
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    db2:
+      jdbc-url: jdbc:mysql://localhost:3306/user?createDatabaseIfNotExist=true
+      username: root
+      password: Chetan@12345
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: user
+#      username: chetan
+#      password: chetan
